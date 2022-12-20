@@ -1,0 +1,14 @@
+syntax="proto3";
+
+service SplitterService{
+    rpc messageSplitter(MessageRequest) returns(MessageResponse){}
+}
+
+message MessageRequest{
+    string message=1;
+    string splitter=2;
+}
+
+message MessageResponse{
+    string result=1;
+}
