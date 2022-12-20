@@ -10,5 +10,5 @@ message MessageRequest{
 }
 
 message MessageResponse{
-    string result=1;
+    repeated string result=1;
 }

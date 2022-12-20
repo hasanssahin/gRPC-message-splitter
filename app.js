@@ -17,7 +17,7 @@ server.addService(splitterProto.SplitterService.service, {
     messageSplitter:(call, callback)=>{
         const splitter=call.request.splitter
         const splitted_msg = call.request.message.split(splitter)
-        const result=splitted_msg[0]
+        const result=splitted_msg
         callback(null,{result})
     }
 })
